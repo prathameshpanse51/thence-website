@@ -10,6 +10,10 @@ import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import rectangle from "../assets/rectangle.png";
+import rectangle2 from "../assets/rectangle2.png";
+import rectangle3 from "../assets/rectangle3.png";
+import rectangle4 from "../assets/rectangle4.png";
 
 export default function Home() {
   const [activeStep, setActiveStep] = useState(0);
@@ -17,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col gap-16 w-full mt-14 mb-44">
+      <main className="flex flex-col gap-16 w-full mt-14">
         <div className="flex flex-col items-center">
           <p className="covered-by-your-grace-regular tracking-tighter text-4xl text-[#2DA950]">
             Success stories
@@ -28,11 +32,11 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="w-[98%] h-[100%] flex justify-around items-end mx-auto my-8">
-          <div id="left-div relative">
-            <img src={HomeImg} className="ml-24" />
+        <div className="w-[100%] h-[100vh] flex justify-between mx-auto my-8">
+          <div id="left-div">
+            <img src={HomeImg} className="ml-52" />
             <div
-              className=" bg-white w-[268px] p-[30px] rounded-[28px] absolute z-999 bottom-[-130px] left-[70px]"
+              className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[430px] left-[50px]"
               style={{ boxShadow: "0px 22.59px 36.14px 0px #1E1E1E17" }}
             >
               <p className="manrope600 text-6xl text-[#1C1C1C]">
@@ -48,7 +52,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 absolute bottom-[-250px] left-[180px]"
+              className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 relative bottom-[380px] left-[150px]"
               style={{ boxShadow: "0px 15.21px 35.49px 0px #00000017" }}
             >
               <svg
@@ -74,7 +78,7 @@ export default function Home() {
             </div>
 
             <div
-              className="bg-[#002E18] flex flex-col gap-4 rounded-[29px] w-[290px] pt-[34px] px-[32px] pb-[40px] z-999 absolute bottom-[-355px] right-[680px]"
+              className="bg-[#002E18] flex flex-col gap-4 rounded-[29px] w-[290px] pt-[34px] px-[32px] pb-[40px] z-999 relative bottom-[520px] right-[-530px]"
               style={{
                 border: "1.18px solid",
 
@@ -94,9 +98,26 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div id="right-div">
-            <div className="flex flex-col gap-32">
-              <div className="flex flex-col gap-12">
+          <div id="right-div" className="relative bottom-[80px]">
+            <span className="relative">
+              <div className="flex flex-row">
+                <img src={rectangle} alt="" />
+                <img src={rectangle} alt="" />
+                <img src={rectangle2} alt="" />
+              </div>
+              <div className="flex flex-row">
+                <img src={rectangle3} alt="" />
+                <img src={rectangle3} alt="" />
+                <img src={rectangle4} alt="" />
+              </div>
+              <div className="flex flex-row">
+                <img src={rectangle} alt="" className="rotate-180" />
+                <img src={rectangle} alt="" className="rotate-180" />
+                <img src={rectangle4} alt="" />
+              </div>
+            </span>
+            <div className="flex flex-col gap-32 relative bottom-[420px] right-[60px]">
+              <div className="flex flex-col gap-20">
                 <h2 className="manrope600 w-[398px] tracking-tight text-4xl text-[#1c1c1c] ">
                   Enhance fortune 50 company’s insights teams research
                   capabilities
@@ -107,7 +128,7 @@ export default function Home() {
                   position="static"
                   activeStep={activeStep}
                   sx={{ maxWidth: 400, flexGrow: 1 }}
-                  className="text-[#2DA950]"
+                  className="text-[#2DA950] bg-transparent"
                 />
               </div>
               <button className="manrope500 w-[243.39px] h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 49.61px, 26.11px, 41.78px] text-[#FFFFFF] text-lg tracking-wider leading-6 bg-[#1C1C1C] hover:bg-[#4E4E4E] hover:transition-all hover:duration-800">
@@ -117,6 +138,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+
       <AskQuestions />
       <Footer />
     </>

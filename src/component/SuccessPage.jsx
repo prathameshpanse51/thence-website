@@ -3,17 +3,38 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 
-export default function Navbar() {
+export default function SuccessPage() {
+  function startCountdown(duration, display) {
+    let timer = duration,
+      seconds;
+    setInterval(function () {
+      seconds = parseInt(timer % 60, 10);
+
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = seconds + " Seconds";
+
+      if (--timer < 0) {
+        timer = duration;
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 800);
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    let fiveMinutes = 5, // 5 minutes
+      display = document.querySelector("#timer");
+    startCountdown(fiveMinutes, display);
+  };
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar
           position="static"
-          className="bg-[#FFFFFF] w-[98%] h-[111.17px] flex justify-center mx-auto my-2 text-black shadow-none border-[1px] border-[#EAEAEA] p-[16.97px, 20.89px, 16.97px, 52.22px] rounded-[65.28px]"
+          className="bg-[#FFFFFF] w-[98%] h-[111.17px] flex justify-center mx-auto my-2 text-black shadow-none p-[16.97px, 20.89px, 16.97px, 52.22px] rounded-[65.28px]"
         >
           <Toolbar>
             {/* <IconButton
@@ -40,24 +61,50 @@ export default function Navbar() {
                 />
               </svg>
             </Typography>
-            <Box className="flex gap-4">
-              <button
-                onClick={() =>
-                  setTimeout(() => {
-                    window.location.href = "/register";
-                  }, 200)
-                }
-                className="manrope500 w-[189.56px] h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 41.78px, 26.11px, 41.78px] text-[#1C1C1C] text-lg leading-6 hover:bg-[#F1F1F1] hover:transition-all hover:duration-800"
-              >
-                Get Projects
-              </button>
-              <button className="manrope500 w-[223.39px] h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 49.61px, 26.11px, 41.78px] text-[#FFFFFF] text-lg tracking-wider leading-6 bg-[#1C1C1C] hover:bg-[#4E4E4E] hover:transition-all hover:duration-800">
-                Onboard Talent
-              </button>
-            </Box>
           </Toolbar>
         </AppBar>
       </Box>
+
+      <main className="w-[718px] flex flex-col mx-auto content-center items-center gap-[41px]">
+        <div>
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="40.5" cy="40.5" r="28" fill="white" />
+            <path
+              d="M40.0014 73.3219C21.5919 73.3219 6.66809 58.3979 6.66809 39.9886C6.66809 21.5791 21.5919 6.65527 40.0014 6.65527C58.4107 6.65527 73.3347 21.5791 73.3347 39.9886C73.3347 58.3979 58.4107 73.3219 40.0014 73.3219ZM36.6768 53.3219L60.2471 29.7517L55.5331 25.0377L36.6768 43.8939L27.2488 34.4656L22.5347 39.1799L36.6768 53.3219Z"
+              fill="#28B246"
+            />
+          </svg>
+        </div>
+        <div className="flex flex-col items-center gap-[16px] tracking-tighter">
+          <h2 className="covered-by-your-grace-regular text-4xl text-[#2DA950]">
+            Success Submitted{" "}
+          </h2>
+          <div className="flex flex-col items-center gap-[20px]">
+            <h1 className="manrope600 text-6xl text-[#1C1C1C]">
+              Congratulations
+            </h1>
+            <p className="manrope500 text-2xl text-[#727272] text-center">
+              Your request has been successfully submitted to us. We will
+              validate your information and reach out to your shortly with
+              updates
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p className="mansope400 text-xl text-[#727272] text-center mt-44">
+          Redirecting you to Homepage in{" "}
+          <span className="manrope600 text-[#1c1c1c]" id="timer">
+            05 Seconds
+          </span>
+        </p>
+      </footer>
     </>
   );
 }

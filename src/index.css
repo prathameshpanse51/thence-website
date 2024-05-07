@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2da950;
+  background-color: #c8e6cf;
   border: 3px solid transparent;
   border-radius: 6px;
   background-clip: content-box;
@@ -53,4 +53,8 @@
 
 .css-26w9jf-MuiMobileStepper-dot {
   background-color: #2da950 !important;
+}
+
+#invalidSVG {
+  display: none;
 }
