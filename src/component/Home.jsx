@@ -34,7 +34,11 @@ export default function Home() {
 
         <div className="w-[100%] h-[100vh] flex justify-between mx-auto my-8">
           <div id="left-div">
-            <img src={HomeImg} className="ml-52" />
+            <img
+              src="https://ik.imagekit.io/qz6ubt34n4/image.png?updatedAt=1715107900018"
+              className="ml-52"
+            />
+            {/* <img src={HomeImg} className="ml-52" /> */}
             <div
               className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[430px] left-[50px]"
               style={{ boxShadow: "0px 22.59px 36.14px 0px #1E1E1E17" }}
