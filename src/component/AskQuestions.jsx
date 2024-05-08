@@ -7,6 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { Zoom } from "react-awesome-reveal";
 
 export default function AskQuestions() {
   const askQuestions = [
@@ -85,30 +86,31 @@ export default function AskQuestions() {
           <div className="h-fit flex flex-col mt-10 md:mt-24 mb-8">
             {askQuestions.map((e, idx) => {
               return (
-                <Accordion
-                  key={idx}
-                  className="bg-transparent shadow-none py-6"
-                  expanded={expanded === `panel${idx}`}
-                  onChange={handleChange(`panel${idx}`)}
-                >
-                  <AccordionSummary
-                    expandIcon={
-                      expanded === `panel${idx}` ? (
-                        <RemoveIcon className="text-[#000000] w-[24px] h-[24px]" />
-                      ) : (
-                        <AddIcon className="text-[#000000] w-[24px] h-[24px]" />
-                      )
-                    }
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    className="manrope600 text-base md:text-xl text-[#1C1C1C] leading-6 !pl-0"
+                <Zoom triggerOnce key={idx}>
+                  <Accordion
+                    className="bg-transparent shadow-none py-6"
+                    expanded={expanded === `panel${idx}`}
+                    onChange={handleChange(`panel${idx}`)}
                   >
-                    {e.topic}
-                  </AccordionSummary>
-                  <AccordionDetails className="manrope400 text-[#617275] text-sm md:text-base leading-6 !pl-0">
-                    {e.desc}
-                  </AccordionDetails>
-                </Accordion>
+                    <AccordionSummary
+                      expandIcon={
+                        expanded === `panel${idx}` ? (
+                          <RemoveIcon className="text-[#000000] w-[24px] h-[24px]" />
+                        ) : (
+                          <AddIcon className="text-[#000000] w-[24px] h-[24px]" />
+                        )
+                      }
+                      aria-controls="panel1-content"
+                      id="panel1-header"
+                      className="manrope600 text-base md:text-xl text-[#1C1C1C] leading-6 !pl-0"
+                    >
+                      {e.topic}
+                    </AccordionSummary>
+                    <AccordionDetails className="manrope400 text-[#617275] text-sm md:text-base leading-6 !pl-0">
+                      {e.desc}
+                    </AccordionDetails>
+                  </Accordion>
+                </Zoom>
               );
             })}
           </div>
