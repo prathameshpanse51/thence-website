@@ -34,13 +34,14 @@ https://github.com/prathameshpanse51/thence-website/assets/93512551/a1c88f1f-554
 ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/ede260a5-cc6d-4f88-baac-f1acbaa22263)
 
 2. Registration Page
+   
    a) Form Field - Empty
    ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/4a55c9f3-54aa-44e8-a9db-acf67dd1f963)
 
    b) Form Field - Error/Filled
    ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/95b15cca-6518-443b-8fce-540c9e26d6a3)
 
-3. Success Page
+4. Success Page
    ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/4a183bfe-6ef3-4b25-8daf-a15422987c3c)
 
 
