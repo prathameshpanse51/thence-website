@@ -60,7 +60,7 @@ export default function SuccessPage() {
         </AppBar>
       </Box>
 
-      <main className="md:w-[718px] flex flex-col mx-10 md:mx-auto content-center items-center gap-[20px] md:gap-[41px]">
+      <main className="md:w-[718px] flex flex-col mx-10 md:mx-auto content-center items-center mt-10 md:mt-0 gap-[20px] md:gap-[41px]">
         <div>
           <svg
             // width="80"
@@ -94,7 +94,7 @@ export default function SuccessPage() {
         </div>
       </main>
       <footer>
-        <p className="mansope400 text-sm md:text-xl text-[#727272] text-center mt-40 md:mt-44">
+        <p className="mansope400 text-sm md:text-xl text-[#727272] fixed bottom-0 w-[100%] text-center mb-4 md:mb-10 mt-40 md:mt-44">
           Redirecting you to Homepage in{" "}
           <span className="manrope600 text-[#1c1c1c]" id="timer">
             05 Seconds
