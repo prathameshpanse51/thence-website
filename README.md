@@ -25,3 +25,14 @@ https://github.com/prathameshpanse51/thence-website/assets/93512551/df6a099a-0d6
 3. Mobile View
    
 https://github.com/prathameshpanse51/thence-website/assets/93512551/a1c88f1f-5541-4d35-9f52-3a7b88df5426
+
+ ## ScreenShots
+ 1. Home Page
+ ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/0d7691c6-fd37-4cb3-8387-f6c0c91b3c3d)
+ ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/482b354d-c12c-494b-a255-4b04cc8e9c5a)
+ ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/b6fe8c36-66a3-472c-9f64-a6e172c97564)
+ ![image](https://github.com/prathameshpanse51/thence-website/assets/93512551/11297a96-8d89-4835-b3ad-8d409e65818a)
+
+
+
+
