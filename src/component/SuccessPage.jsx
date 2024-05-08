@@ -24,10 +24,10 @@ export default function SuccessPage() {
     }, 1000);
   }
 
-  window.onload = function () {
+  window.onload = async function async() {
     let fiveSeconds = 5, // 5 seconds
       display = document.querySelector("#timer");
-    startCountdown(fiveSeconds, display);
+    await startCountdown(fiveSeconds, display);
   };
   return (
     <>
