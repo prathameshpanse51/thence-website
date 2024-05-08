@@ -54,6 +54,13 @@
 .css-26w9jf-MuiMobileStepper-dot,
 .css-n06765 {
   background-color: #2da950 !important;
+  cursor: pointer !important;
+}
+
+.css-114p2tk-MuiMobileStepper-dot:hover,
+.css-454acy:hover {
+  background-color: #cad0cb !important;
+  cursor: pointer !important;
 }
 
 #invalidSVG {
