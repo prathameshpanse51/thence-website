@@ -21,26 +21,26 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col gap-16 w-full mt-14">
+      <main className="flex flex-col gap-8 md:gap-16 w-full mt-6 md:mt-14">
         <div className="flex flex-col items-center">
-          <p className="covered-by-your-grace-regular tracking-tighter text-4xl text-[#2DA950]">
+          <p className="covered-by-your-grace-regular tracking-tighter text-3xl md:text-4xl text-[#2DA950]">
             Success stories
           </p>
-          <h1 className="manrope600 tracking-tighter leading-[70px] text-[56px] text-[#1C1C1C]">
+          <h1 className="manrope600 tracking-tighter md:leading-[70px] text-3xl md:text-[56px] text-[#1C1C1C]">
             Every success journey <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;we’ve encountered.
+            &nbsp;&nbsp;&nbsp;
+            <span className="ml-2">we’ve encountered.</span>
           </h1>
         </div>
 
-        <div className="w-[100%] h-[100vh] flex justify-between mx-auto my-8">
+        <div className="w-[100%] h-[100vh] flex flex-col md:flex-row md:justify-between mx-auto my-8">
           <div id="left-div">
             <img
               src="https://ik.imagekit.io/qz6ubt34n4/image.png?updatedAt=1715107900018"
-              className="ml-52"
+              className="mx-auto md:ml-52 w-[200px] h-[220px] md:w-fit md:h-fit"
             />
-            {/* <img src={HomeImg} className="ml-52" /> */}
             <div
-              className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[430px] left-[50px]"
+              className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[250px] left-[-70px] md:bottom-[430px] md:left-[50px] scale-[0.4] md:scale-100"
               style={{ boxShadow: "0px 22.59px 36.14px 0px #1E1E1E17" }}
             >
               <p className="manrope600 text-6xl text-[#1C1C1C]">
@@ -56,7 +56,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 relative bottom-[380px] left-[150px]"
+              className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 relative bottom-[330px] left-[-40px] md:bottom-[380px] md:left-[150px] scale-[0.4] md:scale-100"
               style={{ boxShadow: "0px 15.21px 35.49px 0px #00000017" }}
             >
               <svg
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
 
             <div
-              className="bg-[#002E18] flex flex-col gap-4 rounded-[29px] w-[290px] pt-[34px] px-[32px] pb-[40px] z-999 relative bottom-[520px] right-[-530px]"
+              className="bg-[#002E18] flex flex-col gap-4 rounded-[29px] w-[290px] pt-[34px] px-[32px] pb-[40px] z-999 relative bottom-[480px] right-[-90px] md:bottom-[520px] md:right-[-530px] scale-[0.4] md:scale-100"
               style={{
                 border: "1.18px solid",
 
@@ -102,27 +102,30 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div id="right-div" className="relative bottom-[80px]">
+          <div
+            id="right-div"
+            className="relative bottom-[560px] md:bottom-[80px]"
+          >
             <span className="relative">
-              <div className="flex flex-row">
+              <div className="flex flex-row scale-[0.5] md:scale-100">
                 <img src={rectangle} alt="" />
                 <img src={rectangle} alt="" />
                 <img src={rectangle2} alt="" />
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-row relative bottom-[100px] md:bottom-0 scale-[0.5] md:scale-100">
                 <img src={rectangle3} alt="" />
                 <img src={rectangle3} alt="" />
                 <img src={rectangle4} alt="" />
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-row relative bottom-[200px] md:bottom-0 scale-[0.5] md:scale-100">
                 <img src={rectangle} alt="" className="rotate-180" />
                 <img src={rectangle} alt="" className="rotate-180" />
                 <img src={rectangle4} alt="" />
               </div>
             </span>
-            <div className="flex flex-col gap-32 relative bottom-[420px] right-[60px]">
-              <div className="flex flex-col gap-20">
-                <h2 className="manrope600 w-[398px] tracking-tight text-4xl text-[#1c1c1c] ">
+            <div className="flex flex-col gap-16 md:gap-32 relative bottom-[500px] right-[-10px] md:bottom-[420px] md:right-[60px]">
+              <div className="flex flex-col gap-10 md:gap-20 w-fit">
+                <h2 className="manrope600 w-[300px] md:w-[398px] tracking-tight text-2xl md:text-4xl text-[#1c1c1c] ">
                   Enhance fortune 50 company’s insights teams research
                   capabilities
                 </h2>
@@ -135,7 +138,7 @@ export default function Home() {
                   className="text-[#2DA950] bg-transparent"
                 />
               </div>
-              <button className="manrope500 w-[243.39px] h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 49.61px, 26.11px, 41.78px] text-[#FFFFFF] text-lg tracking-wider leading-6 bg-[#1C1C1C] hover:bg-[#4E4E4E] hover:transition-all hover:duration-800">
+              <button className="manrope500 w-[190px] h-[60px] md:w-[243.39px] md:h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 49.61px, 26.11px, 41.78px] text-[#FFFFFF] text-sm md:text-lg tracking-wider leading-6 bg-[#1C1C1C] hover:bg-[#4E4E4E] hover:transition-all hover:duration-800 ">
                 Explore More <ArrowForwardIcon className="ml-4" />
               </button>
             </div>

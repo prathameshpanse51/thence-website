@@ -25,9 +25,9 @@ export default function SuccessPage() {
   }
 
   window.onload = function () {
-    let fiveMinutes = 5, // 5 minutes
+    let fiveSeconds = 5, // 5 seconds
       display = document.querySelector("#timer");
-    startCountdown(fiveMinutes, display);
+    startCountdown(fiveSeconds, display);
   };
   return (
     <>
