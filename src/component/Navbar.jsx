@@ -93,6 +93,11 @@ export default function Navbar(props) {
                   padding: "10px",
                   color: "#FFFFFF",
                   backgroundColor: "#1C1C1C",
+                  "&:hover": {
+                    backgroundColor: "#4e4e4e",
+                    transition: "all",
+                    transitionDuration: "800ms",
+                  },
                 }}
                 className="manrope500"
               >
