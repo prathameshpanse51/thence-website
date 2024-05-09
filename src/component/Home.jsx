@@ -41,10 +41,10 @@ export default function Home() {
             <div id="left-div">
               <img
                 src="https://ik.imagekit.io/qz6ubt34n4/image.png?updatedAt=1715107900018"
-                className="mx-auto md:ml-52 w-[200px] h-[220px] md:w-fit md:h-fit"
+                className="mx-auto md:ml-52 w-[240px] h-[260px] md:w-fit md:h-fit"
               />
               <div
-                className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[250px] left-[-70px] md:bottom-[430px] md:left-[50px] scale-[0.4] md:scale-100"
+                className=" bg-white w-[268px] p-[30px] rounded-[28px] relative z-999 bottom-[260px] left-[-90px] md:bottom-[430px] md:left-[50px] scale-[0.4] md:scale-100"
                 style={{ boxShadow: "0px 22.59px 36.14px 0px #1E1E1E17" }}
               >
                 <p className="manrope600 text-6xl text-[#1C1C1C]">
@@ -60,7 +60,7 @@ export default function Home() {
                 </p>
               </div>
               <div
-                className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 relative bottom-[330px] left-[-40px] md:bottom-[380px] md:left-[150px] scale-[0.4] md:scale-100"
+                className="w-[245px] flex flex-row items-center justify-center gap-4 bg-white py-4 pr-6 rounded-[112px] z-999 relative bottom-[330px] left-[-70px] md:bottom-[380px] md:left-[150px] scale-[0.4] md:scale-100"
                 style={{ boxShadow: "0px 15.21px 35.49px 0px #00000017" }}
               >
                 <svg

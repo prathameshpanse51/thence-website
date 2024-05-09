@@ -79,7 +79,7 @@ export default function AskQuestions() {
             </defs>
           </svg>
         </div>
-        <div id="right-div" className="md:w-[50%] px-10 md:p-0 md:pr-16">
+        <div id="right-div" className="md:w-[50%] px-8 md:p-0 md:pr-16">
           <div className="h-fit flex flex-col mt-10 md:mt-24 mb-8">
             {askQuestions.map((e, idx) => {
               return (
