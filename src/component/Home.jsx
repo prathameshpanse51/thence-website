@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </Slide>
 
-        <div className="w-[100%] h-[100vh] flex flex-col md:flex-row md:justify-between mx-auto my-8">
+        <div className="w-[100%] h-[100vh] flex flex-col items-center md:items-start md:flex-row md:justify-between mx-auto my-8">
           <Slide direction="left" duration={1400} triggerOnce>
             <div id="left-div">
               <img
@@ -110,7 +110,12 @@ export default function Home() {
               </div>
             </div>
           </Slide>
-          <Slide direction="left" duration={1000} triggerOnce>
+          <Slide
+            direction="left"
+            duration={1000}
+            triggerOnce
+            className="hidden md:block"
+          >
             <div
               id="right-div"
               className="relative bottom-[560px] md:bottom-[80px]"
@@ -153,6 +158,48 @@ export default function Home() {
               </div>
             </div>
           </Slide>
+
+          <div
+            id="right-div"
+            className="relative bottom-[560px] flex flex-col items-end md:bottom-[80px] block md:hidden"
+          >
+            <span className="relative">
+              <div className="flex flex-row scale-[0.5] md:scale-100">
+                <img src={rectangle} alt="" />
+                <img src={rectangle} alt="" />
+                <img src={rectangle2} alt="" />
+              </div>
+              <div className="flex flex-row relative bottom-[100px] md:bottom-0 scale-[0.5] md:scale-100">
+                <img src={rectangle3} alt="" />
+                <img src={rectangle3} alt="" />
+                <img src={rectangle4} alt="" />
+              </div>
+              <div className="flex flex-row relative bottom-[200px] md:bottom-0 scale-[0.5] md:scale-100">
+                <img src={rectangle} alt="" className="rotate-180" />
+                <img src={rectangle} alt="" className="rotate-180" />
+                <img src={rectangle4} alt="" />
+              </div>
+            </span>
+            <div className="flex flex-col gap-16 md:gap-32 relative bottom-[500px] right-[-10px] md:bottom-[420px] md:right-[60px]">
+              <div className="flex flex-col gap-10 md:gap-20 w-fit">
+                <h2 className="manrope600 w-[300px] md:w-[398px] tracking-tight text-2xl md:text-4xl text-[#1c1c1c] ">
+                  Enhance fortune 50 company’s insights teams research
+                  capabilities
+                </h2>
+                <MobileStepper
+                  variant="dots"
+                  steps={3}
+                  position="static"
+                  activeStep={activeStep}
+                  sx={{ maxWidth: 400, flexGrow: 1 }}
+                  className="text-[#2DA950] bg-transparent"
+                />
+              </div>
+              <button className="manrope500 w-[190px] h-[60px] md:w-[243.39px] md:h-[77.22px] border-[1.31px] border-[#EAEAEA] rounded-[107.06px] p-[26.11px, 49.61px, 26.11px, 41.78px] text-[#FFFFFF] text-sm md:text-lg tracking-wider leading-6 bg-[#1C1C1C] hover:bg-[#4E4E4E] hover:transition-all hover:duration-800 ">
+                Explore More <ArrowForwardIcon className="ml-4" />
+              </button>
+            </div>
+          </div>
         </div>
       </main>
 
