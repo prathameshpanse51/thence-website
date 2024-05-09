@@ -6,13 +6,13 @@ import Typography from "@mui/material/Typography";
 
 export default function SuccessPage() {
   window.onload = function async() {
-    let fiveSeconds = 5, // 5 seconds
-      display = document.querySelector("#timer");
+    let fiveSeconds = 5; // 5 seconds
     setInterval(() => {
       if (fiveSeconds === 0) {
         window.location.href = "/";
       }
-      display.textContent = "0" + fiveSeconds + " Seconds";
+      document.getElementById("timer").innerHTML =
+        "0" + fiveSeconds + " Seconds";
       fiveSeconds--;
     }, 1000);
   };
