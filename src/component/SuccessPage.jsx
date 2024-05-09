@@ -5,29 +5,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 export default function SuccessPage() {
-  function startCountdown(duration, display) {
-    let timer = duration,
-      seconds;
-    setInterval(function () {
-      seconds = parseInt(timer % 60, 10);
-
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      display.textContent = seconds + " Seconds";
-
-      if (--timer < 0) {
-        timer = duration;
-        setTimeout(() => {
-          window.location.href = "/";
-        }, 800);
-      }
-    }, 1000);
-  }
-
-  window.onload = async function async() {
+  window.onload = function async() {
     let fiveSeconds = 5, // 5 seconds
       display = document.querySelector("#timer");
-    await startCountdown(fiveSeconds, display);
+    setInterval(() => {
+      if (fiveSeconds === 0) {
+        window.location.href = "/";
+      }
+      display.textContent = "0" + fiveSeconds + " Seconds";
+      fiveSeconds--;
+    }, 1000);
   };
   return (
     <>
