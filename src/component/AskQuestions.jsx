@@ -37,7 +37,7 @@ export default function AskQuestions() {
   };
   return (
     <>
-      <div className="w-[95%] md:w-[98%] h-[100%] flex flex-col md:flex-row justify-center mx-auto my-8 bg-[#E8EEE7] rounded-[40px]">
+      <div className="w-[95%] md:w-[98%] h-[100%] flex flex-col md:flex-row justify-center mx-auto mb-8 md:my-8 bg-[#E8EEE7] rounded-[40px]">
         <div id="left-div" className="md:w-[50%]">
           <div className="flex flex-col mt-12 md:my-16 mx-4 md:mx-20">
             <p className="covered-by-your-grace-regular text-2xl md:text-3xl text-[#9E9D9D]">
