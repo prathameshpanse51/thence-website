@@ -40,7 +40,7 @@ export default function Home() {
           <Slide direction="left" duration={1400} triggerOnce>
             <div id="left-div">
               <img
-                src="https://ik.imagekit.io/qz6ubt34n4/image.png?updatedAt=1715107900018"
+                src={HomeImg}
                 className="mx-auto md:ml-52 w-[240px] h-[260px] md:w-fit md:h-fit"
               />
               <div
